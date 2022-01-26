@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/book_order_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/row_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Date : "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/book_order_name" />
+
+        <TextView
+            android:id="@+id/row_booking_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/row_Date"
+            app:layout_constraintTop_toBottomOf="@id/book_order_name" />
+
+        <TextView
+            android:id="@+id/row_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Time : "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_Date" />
+
+        <TextView
+            android:id="@+id/row_booking_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/row_Date"
+            app:layout_constraintTop_toBottomOf="@id/row_Date" />
+
+        <TextView
+            android:id="@+id/row_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Status : "
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/booking_status"
+            app:layout_constraintTop_toBottomOf="@id/row_time" />
+
+        <TextView
+            android:id="@+id/booking_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_time" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Contact :"
+                android:layout_weight="0.65"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:id="@+id/txt_contact"
+                android:layout_weight="0.35"
+                android:gravity="end"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Amount :"
+                android:layout_weight="0.65"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:id="@+id/txt_amount"
+                android:layout_weight="0.35"
+                android:gravity="end"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/coupan_layout">
+
+            <TextView android:id="@+id/txt_coupan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Deposit : "
+                android:layout_weight="0.65"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/txt_deposit"
+                android:layout_weight="0.35"
+                android:textColor="@android:color/secondary_text_light"
+                android:gravity="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/txt_address"
+                android:layout_weight="0.35"
+                android:gravity="end"
+                android:textColor="@android:color/secondary_text_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+    </LinearLayout>
+<Button
+    android:id="@+id/dailog_ok"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:textColor="@android:color/white"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="end"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:text="ok"/>
+</LinearLayout>

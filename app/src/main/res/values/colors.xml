@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3CB371</color>
+    <color name="colorPrimaryDark">#32CD32</color>
+    <color name="colorAccent">#3CB371</color>
+    <color name="yellow">#FFC107</color>
+    <color name="reject">#E91E63</color>
+</resources>

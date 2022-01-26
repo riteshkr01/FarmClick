@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Activity.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATION"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTractorName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="Enter equipment name"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_description"
+                android:drawablePadding="10dp"
+                android:hint="Enter detail of equipment "
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextContact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_phonenumber"
+                android:drawablePadding="10dp"
+                android:hint="Enter contact number"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextAddressdetail"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edt_background"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawablePadding="10dp"
+                    android:hint="Select Location here.."
+                    android:inputType="text"
+                    android:layout_weight="1.7"
+                    android:maxLength="30"
+                    android:padding="10dp"/>
+
+
+                <ImageView
+                    android:id="@+id/currentLocationImage"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/ic_my_location" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextcityone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_city"
+                android:drawablePadding="10dp"
+                android:hint="Enter City"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTexttalukaone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_city"
+                android:drawablePadding="10dp"
+                android:hint="Enter taluka"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/editTextPrize"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="10dp"
+                android:hint="Enter prize"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextDeposite"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_background"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="10dp"
+                android:hint="Enter deposite"
+                android:inputType="text"
+                android:maxLength="30"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_ChooseImage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.6"
+                    android:text="Choose Image"
+                    android:background="@drawable/edt_background"/>
+
+                <ImageView
+                    android:id="@+id/imgview_image"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.4"
+                    android:tooltipText="Upload Image" />
+
+
+                <Button
+                    android:id="@+id/btn_uploadImage"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/shadowroundbutton"
+                    android:text="Upload Image"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadowroundbutton"
+                android:text="Add Equipments"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
